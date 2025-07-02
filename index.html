@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body class="bg-gradient-to-br from-purple-100 via-indigo-100 to-blue-100 text-gray-800 font-sans text-base scroll-smooth"></body>
+
+  <!-- Wrapper -->
+  <div class="max-w-screen-lg mx-auto shadow-lg border border-gray-300 mt-4">
+
+    <!-- Fake Browser Bar -->
+    <div class="flex items-center border-b border-gray-300 px-4 py-2 bg-gray-100">
+      <div class="flex space-x-2">
+        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+        <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+      </div>
+      <div class="ml-4 font-semibold">Company Profile</div>
+      <div class="ml-auto flex items-center space-x-2 text-sm text-gray-600">
+        <i class="fas fa-lock"></i>
+        <span>www.mywebsite.com</span>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex justify-center gap-4 py-4 bg-white sticky top-0 z-10 border-b border-gray-200">
+      <a href="#home" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Home</a>
+      <a href="#profile" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Our Profile</a>
+      <a href="#portfolio" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Portfolio</a>
+      <a href="#message" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Message Us</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="px-6 py-10 text-center">
+      <h1 class="text-2xl font-bold mb-2">Hi <span id="welcomeName">Pengunjung</span>, Welcome To Our Website!</h1>
+      <p class="text-lg text-gray-600">This is our first website project using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="bg-gray-50 py-10 px-6">
+      <h2 class="text-xl font-bold mb-4 text-center">Our Profile</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+           <img src="assets/images/company-banner.jpg" alt="Company Banner" class="w-full rounded shadow" /> 
+        </div>
+        <div class="space-y-4">
+          <p><b>About Us:</b> We are a tech company focusing on software development and digital innovation.</p>
+          <p><b>Vision:</b> To be a leading software company that drives the future of technology in Southeast Asia.</p>
+          <p><b>Mission:</b> Deliver high-quality, user-focused digital solutions to businesses and communities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-10 px-6">
+      <h2 class="text-xl font-bold mb-4 text-center">Our Portfolio</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="assets/images/mobile-app-development.jpg" alt="Mobile App" class="mb-2 w-full rounded" />
+        <img src="assets/images/website-projects.jpg" alt="Website Projects" class="mb-2 w-full rounded" />
+        <img src="assets/images/tech-consultancy.jpg" alt="Tech Consultancy" class="mb-2 w-full rounded" />
+    </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="message" class="bg-gray-50 py-10 px-6">
+      <h2 class="text-xl font-bold mb-4 text-center">Message Us</h2>
+      <div class="flex flex-col md:flex-row gap-6">
+        <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
+          <label>
+            Nama:
+            <input type="text" name="name" required class="w-full border px-3 py-2 rounded" />
+          </label>
+          <label>
+            Tanggal Lahir:
+            <input type="date" name="birthdate" required class="w-full border px-3 py-2 rounded" />
+          </label>
+          <label>Jenis Kelamin:</label>
+          <div class="flex gap-4 text-sm">
+            <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+          </div>
+          <label>
+            Pesan:
+            <textarea name="message" rows="4" required class="w-full border px-3 py-2 rounded"></textarea>
+          </label>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
+            Submit
+          </button>
+        </form>
+
+        <div id="infoBox" class="border p-4 rounded md:w-1/2 bg-white text-sm leading-relaxed">
+          <div class="mb-2 font-bold">Current time :</div>
+          <div id="currentTime" class="mb-4">Loading...</div>
+          <div>
+            <b>Nama:</b> - <br />
+            <b>Tanggal Lahir:</b> - <br />
+            <b>Jenis Kelamin:</b> - <br />
+            <b>Pesan:</b> -
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-xs text-center py-3 border-t border-gray-200">
+      &copy; 2025 RevoU Mini Project | Created by Keyla ✨
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
